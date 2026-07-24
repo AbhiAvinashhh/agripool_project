@@ -1,0 +1,85 @@
+/* Page-specific backgrounds */
+
+/* Home page background */
+.home-page {
+  background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%);
+  min-height: calc(100vh - 80px);
+  position: relative;
+}
+
+.home-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Full-width Hero Section */
+.home-hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/images/farm.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Transport page background */
+.transport-page {
+  background: #e8f5e9;
+  min-height: calc(100vh - 80px);
+}
+
+/* Fertilizer page background */
+.fertilizer-page {
+  background: linear-gradient(135deg, rgba(139, 90, 0, 0.1) 0%, rgba(255, 255, 255, 0.95) 100%);
+  min-height: calc(100vh - 80px);
+  position: relative;
+}
+
+.fertilizer-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><circle cx="200" cy="150" r="100" fill="%23d4a574" opacity="0.2"/><circle cx="800" cy="400" r="150" fill="%23a67c52" opacity="0.15"/><rect x="400" y="200" width="300" height="200" fill="%23c19a6b" opacity="0.1" rx="20"/></svg>');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.fertilizer-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Profile page background */
+.profile-page {
+  background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+  min-height: calc(100vh - 80px);
+}
+
+/* Auth pages background */
+.auth-page {
+  background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%);
+  min-height: calc(100vh - 80px);
+}
+
