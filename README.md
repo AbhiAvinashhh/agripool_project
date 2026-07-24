@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AgriPool - Transport Sharing for Agricultural Produce
 
 A full-stack web application for transport sharing of agricultural produce to markets and customized land parcel-specific fertilizer planning.
@@ -212,3 +211,6 @@ ISC
 # agripool-project
 agripool ca2 project
 >>>>>>> 80cbce44bcb87727bb203e504bdfa4c2e1ae0c5b
+=======
+# agripool_project
+>>>>>>> origin/main
