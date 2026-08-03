@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import axios from 'axios'
 import axiosInstance from '../utils/axiosConfig'
 
 const TransportDetail = () => {
@@ -19,7 +18,7 @@ const TransportDetail = () => {
 
   const fetchTransport = async () => {
     try {
-      const { data } = await axios.get(`/api/transport/${id}`)
+      const { data } = await axiosInstance.get(`/transport/${id}`)
       setTransport(data)
     } catch (error) {
       console.error('Error fetching transport:', error)

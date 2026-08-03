@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import axios from 'axios'
+import axiosInstance from '../utils/axiosConfig'
 
 const TransportList = () => {
   const [transports, setTransports] = useState([])
@@ -28,7 +28,7 @@ const TransportList = () => {
       if (filters.date) params.append('date', filters.date)
       if (filters.produceType) params.append('produceType', filters.produceType)
 
-      const { data } = await axios.get(`/api/transport?${params.toString()}`)
+      const { data } = await axiosInstance.get(`/transport?${params.toString()}`)
       setTransports(data)
     } catch (error) {
       console.error('Error fetching transports:', error)
