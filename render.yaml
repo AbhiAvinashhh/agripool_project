@@ -30,7 +30,6 @@ services:
     rootDir: client
     buildCommand: npm install --legacy-peer-deps && npm run build
     staticPublishPath: dist
-    plan: free
     envVars:
       - key: VITE_API_URL
         value: https://agripool-api.onrender.com/api
